@@ -1,2 +1,16 @@
 @import './common';
-@import './example';
+
+@import './base/reset';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/hidden';
+
+@import './hero-header';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './customer-reviews';
+@import './contacts';
+@import './footer';
+@import './button-modal';
