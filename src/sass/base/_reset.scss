@@ -35,3 +35,26 @@ body {
 .list {
   list-style: none;
 }
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: $mobile-min) {
+    width: $mobile-min;
+  }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.section {
+  margin: 0;
+  padding: 0;
+}
