@@ -1,0 +1,85 @@
+.modal{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    background-color: var(--modal-color);
+
+    @media screen and (min-width: 1200px){
+        display: none;
+    }
+}
+
+.modal__list {
+    list-style: none;
+    margin-bottom: 185px;
+}
+
+.modal__item {
+    margin-bottom: 22px;
+    &:last-child {
+    margin-bottom: 0px;
+    }
+}
+
+.modal__href {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--main-title-color);
+}
+
+
+//////////////////////////////////Active-page////////////////////////
+.modal .modal__href.current {
+    color: var(--main-btn-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+///////////////////////////Button/////////////////////////////
+.modal__close-btn {
+    background-color:transparent;
+    border: none;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.modal__btn{
+    color:var(--main-btn-color);
+    background-color: var(--main-title-color);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    border-radius: 22px;
+    border: none;
+    width: 209px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__icon-btn {
+    margin-left: 15px;
+}
+
+// .is-hidden {
+// opacity: 0;
+// pointer-events: none;
+// visibility: hidden;
+// }
