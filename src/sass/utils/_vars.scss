@@ -9,12 +9,15 @@
   --footer-btn-color: #d41342;
   --accent-color: #ffa5ba;
   --typical-margin: 60px;
+  --text-color: #907E82;
+  --btn-light: #FFFFFF;
+  --text-color-dark: #000000;
 
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-$mobile-min: 320px;
+
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1280px;
