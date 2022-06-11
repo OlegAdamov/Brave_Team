@@ -1,0 +1,88 @@
+.footer {
+  padding-top: 32px;
+  // background-color: var(--accent-color);
+  @include font(
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    var(--accent-color)
+  );
+  //   background-color: #ffa5ba;
+}
+.location-franshise__item {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+.btn1,
+.btn2 {
+  @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+  border-radius: 22px;
+  list-style: none;
+  align-items: Center;
+  border-color: inherit;
+  height: 44px;
+  width: 161.45px;
+}
+.btn1 {
+  @include font(
+    10px,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    var(--main-title-color),
+    #d41342
+  );
+  //   width: 161.45px;
+  //   @include desktop {
+  //     width: 198px;
+  //   }
+}
+.btn2 {
+  @include font(
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    center,
+    var(--main-btn-color),
+    var(--main-title-color)
+  );
+  //   width: 180px;
+}
+.arrow {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  margin-left: 13.62px;
+  border-bottom: 1px solid var(--accent-color);
+}
+.line {
+  border: none;
+  background-color: red;
+  color: red;
+  height: 2px;
+}
+.unicode {
+  margin-right: 4px;
+}
+.end {
+  color: #907e82;
+  font-weight: 700;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+  margin-top: 16px;
+  padding-bottom: 20px;
+}
