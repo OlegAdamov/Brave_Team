@@ -1,85 +1,153 @@
-.modal{
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 60px;
-    background-color: var(--modal-color);
-
-    @media screen and (min-width: 1200px){
-        display: none;
-    }
+.bgr {
+    background-color:var(--modal-color);
 }
-
-.modal__list {
-    list-style: none;
-    margin-bottom: 185px;
-}
-
-.modal__item {
-    margin-bottom: 22px;
-    &:last-child {
-    margin-bottom: 0px;
-    }
-}
-
-.modal__href {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: var(--main-title-color);
-}
-
-
-//////////////////////////////////Active-page////////////////////////
-.modal .modal__href.current {
-    color: var(--main-btn-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-///////////////////////////Button/////////////////////////////
-.modal__close-btn {
-    background-color:transparent;
-    border: none;
-
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
+/////////////////// header-hero-btn///////////////////
 .modal__btn{
     color:var(--main-btn-color);
     background-color: var(--main-title-color);
     font-weight: 700;
     font-size: 16px;
+    line-height:0.7;
     display: flex;
     align-items: center;
     text-align: center;
 
-    
-    margin-right: auto;
-    margin-bottom: 32px;
-
     border-radius: 22px;
     border: none;
-    width: 209px;
-    height: 44px;
+
+    padding: 15px 40px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    &:hover,
+    :focus {
+    background-color: #ECEBEB;
+    }
+    transition-duration: 300ms;
 }
-
 .modal__icon-btn {
     margin-left: 15px;
 }
 
-// .is-hidden {
-// opacity: 0;
-// pointer-events: none;
-// visibility: hidden;
-// }
+.product__btn {
+    color: var(--main-title-color);
+    background-color: var(--main-btn-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    
+    border-radius: 22px;
+    border: none;
+    
+    padding: 15px 40px;
+    
+    &:hover,
+    :focus {
+    background-color: #ECEBEB;
+    color:var(--main-btn-color) ;
+    }
+    transition-duration: 300ms;
+}
+
+.made__btn {
+    color:var(--main-btn-color);
+    background-color: var(--main-title-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 22px;
+    border: none;
+
+    padding: 15px 40px;
+    
+    &:hover,
+    :focus {
+    background-color: #ECEBEB;
+    }   
+    transition-duration: 300ms;
+}
+// ///////////////Header-hero-products-button////////////////
+.hero-href {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    fill:#D41443 ;
+    align-items: center;
+    
+    &:hover,
+    :focus {
+    background-color: #ECEBEB;
+    }
+    transition-duration: 300ms;
+}
+
+
+//////////////////////how it’s made-button////////////
+.read-more__btn {
+    color: var(--main-btn-color);
+    background-color: var(--main-title-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height:0.7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+
+    border-radius: 22px;
+    border: none;
+
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    :focus {
+        background-color: #ECEBEB;
+    }
+    transition-duration: 300ms;
+}
+
+///////////////////footer-button//////////
+.footer__btn {
+    color:var(--main-title-color) ;
+    background-color:var(--main-btn-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 22px;
+    border: none;
+    
+    padding: 15px 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover,
+    :focus {
+    background-color: #ECEBEB;
+    color: var(--main-btn-color);
+    }
+    
+    transition-duration: 300ms;
+}
+
+.background__btn {
+background-color:var(--main-title-color);
+color: var(--main-btn-color);
+}
