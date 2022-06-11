@@ -1,0 +1,56 @@
+.footer {
+  background-color: var(--accent-color);
+
+  //   background-color: #ffa5ba;
+}
+.location-franshise__item {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+.btn1,
+.btn2 {
+  border-radius: 22px;
+  list-style: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: Center;
+  border-color: inherit;
+  text-align: center;
+  height: 44px;
+  width: 161.45px;
+}
+.btn1 {
+  color: var(--main-title-color);
+  background-color: #d41342;
+  //   width: 161.45px;
+  //   @include desktop {
+  //     width: 198px;
+  //   }
+}
+.btn2 {
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
+  text-align: center;
+  //   width: 180px;
+}
+.arrow {
+  margin-left: 13.62px;
+}
+.line {
+  border: none;
+  background-color: red;
+  color: red;
+  height: 2px;
+}
+.end {
+  color: #907e82;
+  font-weight: 700;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+  margin-top: 16px;
+  padding-bottom: 20px;
+}

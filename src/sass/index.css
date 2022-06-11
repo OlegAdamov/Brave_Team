@@ -1,0 +1,170 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --header-color: #ffb8ca;
+  --main-title-color: #ffffff;
+  --second-title-color: #d41443;
+  --main-btn-color: #d41443;
+  --second-btn-color: #c7133e;
+  --accent-color: #ffa5ba;
+  --typical-margin: 60px;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.products-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+h1 {
+  color: red;
+  height: 50px;
+}
+
+.footer {
+  background-color: var(--accent-color);
+}
+
+.location-franshise__item {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+
+.btn1,
+.btn2 {
+  border-radius: 22px;
+  list-style: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: Center;
+  border-color: inherit;
+  text-align: center;
+  height: 44px;
+  width: 161.45px;
+}
+
+.btn1 {
+  color: var(--main-title-color);
+  background-color: #d41342;
+}
+
+.btn2 {
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
+  text-align: center;
+}
+
+.arrow {
+  margin-left: 13.62px;
+}
+
+.line {
+  border: none;
+  background-color: red;
+  color: red;
+  height: 2px;
+}
+
+.end {
+  color: #907e82;
+  font-weight: 700;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+  margin-top: 16px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=index.css.map */
