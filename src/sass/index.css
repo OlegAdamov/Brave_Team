@@ -275,7 +275,7 @@ h1 {
 
 .footer-soc__list {
   max-width: 100%;
-  display: inline-flex;
+  display: flex;
   list-style: none;
 }
 
