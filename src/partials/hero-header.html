@@ -17,13 +17,13 @@
           <a href="" class="navigation__link link">About us</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link link">How it’s made?</a>
+          <a href="#about" class="navigation__link link">How it’s made?</a>
         </li>
         <li class="navigation__item">
           <a href="" class="navigation__link link">Our products</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link link">Contact</a>
+          <a href="#contacts" class="navigation__link link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +38,12 @@
           <use href="./images/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button type="button" class="header__btn">Buy now</button>
+      <button type="button" class="header__btn">
+        Buy now
+        <svg class="modal__icon-btn" width="15px" height="13px">
+          <use href="/src/images/sprite.svg#icon-arrow-red"></use>
+        </svg>
+      </button>
     </div>
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button type="button" class="close-menu js-close-menu">
@@ -46,7 +51,7 @@
           <use href="./images/sprite.svg#close"></use>
         </svg>
       </button>
-      <button type="button" class="modal-btn">Buy now</button>
+      <button type="button" class="modal-btn modal__btn">Buy now</button>
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link link">Home</a>
@@ -55,7 +60,7 @@
           <a href="" class="mobile-menu__link link">About us</a>
         </li>
         <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link link">How it’s made?</a>
+          <a href="#about" class="mobile-menu__link link">How it’s made?</a>
         </li>
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link link">Our products</a>
@@ -114,7 +119,9 @@
             <a href="" class="hero-btn__link link product__btn">Products</a>
           </li>
           <li class="hero-btn__item">
-            <a href="" class="hero-btn__link link made__btn">How it’s made?</a>
+            <a href="#about" class="hero-btn__link link made__btn"
+              >How it’s made?</a
+            >
           </li>
         </ul>
         <div class="eco">
@@ -145,7 +152,10 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <a href="" class="eco__link link"> </a>
+            <a href="" class="eco__link link">
+              <svg width="20px" height="12px">
+                <use href="/src/images/sprite.svg#icon-arrow-big"></use></svg
+            ></a>
           </div>
 
           <picture>

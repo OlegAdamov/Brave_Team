@@ -33,7 +33,7 @@
 .header__icon {
     
     height: 50px;
-    @media screen and (min-width:$mobile-min) {
+    @media screen and (min-width:320px) {
     margin-right: 18px;
     }
 }
@@ -93,6 +93,26 @@
 }
 
 .header__btn {
+    color: var(--main-btn-color);
+        background-color: var(--main-title-color);
+        @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    
+        border-radius: 22px;
+        border: none;
+    
+        padding: 15px 40px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &:hover,
+        :focus {
+            background-color: var(--second-button-color);
+        }
+    
+        transition-duration: 300ms;
+
     @media screen and (max-width:$tablet) {
         display: none;
     }
@@ -138,10 +158,6 @@
     margin-bottom: 19px;
 }
 
-.mobile-menu__list {
-
-    
-}
 
 .mobile-menu__item {
     &:nth-child(1) {
@@ -215,20 +231,22 @@
     position: absolute;
     width: 171px;
     right: 10px;
+    top: 72px;
     @media screen and (min-width:320px) {
         right: 94px;
+        top: 34px;
     }
         @media screen and (min-width:$tablet) {
         width: 143px;
             right: 118px;
-            top: 42px;
+            top: 76px;
     
         }
                 @media screen and (min-width:$desktop) {
-                    width: 236px;
+                    width: 240px;
                     
                     right: 179px;
-                   top: 135px;
+                   top: 162px;
         
                 }
 }
@@ -304,6 +322,7 @@ span{
 }
 
 .hero-btn__link {
+    display: inline-block;
 font-family: 'DM Sans', sans-serif;   
     @include font(null, 400, 8px, 1.25, null, null, center, var(--main-title-color), null);
         
@@ -403,14 +422,19 @@ align-items: center;
 }
 
 .eco__link {
-    display: inline-block;
+    display: inline-flex;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: var(--main-title-color);
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width:$desktop) {
         width: 26px;
         height: 26px;
+    }
+    svg{
+        fill: var(--second-title-color);
     }
 }
 .girl__bg{
