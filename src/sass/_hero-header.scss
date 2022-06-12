@@ -15,6 +15,7 @@
      
 }
 
+
 .header__box {
     display: flex;
   justify-content: space-between;
@@ -61,8 +62,7 @@
 .navigation__link {
     display: flex;
     align-items: center;
-    font-family: 'DM Sans', sans-serif;
-    
+   
    
 
     
@@ -112,11 +112,11 @@
         }
     
         transition-duration: 300ms;
-
     @media screen and (max-width:$tablet) {
         display: none;
     }
 }
+
 
 .mobile-menu {
     z-index: 2;
@@ -155,9 +155,15 @@
 }
 
 .modal-btn {
+    
+display: inline-block;
     margin-bottom: 19px;
 }
 
+.mobile-menu__list {
+
+    
+}
 
 .mobile-menu__item {
     &:nth-child(1) {
@@ -169,7 +175,7 @@
 }
 
 .mobile-menu__link {
-    font-family: 'DM Sans', sans-serif;
+    
     font-style: normal;
     padding: 12px 0;
     display: flex;
@@ -187,6 +193,8 @@
 
 
 .hero {
+    position: relative;
+    overflow: hidden;
     background-color: var(--header-color);
     padding-top:200px ;
     padding-bottom:152px ;
@@ -217,7 +225,7 @@
     }
         @media screen and (min-width:$desktop) {
             top: 54px;
-            right: 24%;
+            right: 26%;
             width: 534px;
             height: 534px;
     
@@ -228,25 +236,26 @@
 }
 
 .background__images {
+    
     position: absolute;
     width: 171px;
     right: 10px;
-    top: 72px;
+    top: 30px;
     @media screen and (min-width:320px) {
         right: 94px;
-        top: 34px;
     }
         @media screen and (min-width:$tablet) {
         width: 143px;
             right: 118px;
             top: 76px;
+           
     
         }
                 @media screen and (min-width:$desktop) {
-                    width: 240px;
+                    width: 236px;
                     
                     right: 179px;
-                   top: 162px;
+                  top: 168px;
         
                 }
 }
@@ -322,8 +331,7 @@ span{
 }
 
 .hero-btn__link {
-    display: inline-block;
-font-family: 'DM Sans', sans-serif;   
+  display: inline-block;
     @include font(null, 400, 8px, 1.25, null, null, center, var(--main-title-color), null);
         
 }
@@ -362,7 +370,7 @@ font-family: 'DM Sans', sans-serif;
 
 .hero__discription {
     
-font-family: 'DM Sans', sans-serif;
+
  
     @include font(null, 400, 8px, 1.25, null, null, right, var(--main-title-color), null);
     @media screen and (min-width:$desktop) {
@@ -371,7 +379,9 @@ font-family: 'DM Sans', sans-serif;
             
     }
         span{
-        
+         position: sticky;
+         
+         
         display: block;
         font-family: 'Titan One', cursive;         
         @include font(null, 400, 28px, 1.14, 0.04em, uppercase, right, var(--second-title-color), null);
@@ -384,7 +394,7 @@ font-family: 'DM Sans', sans-serif;
 
 .eco {
     display: flex;
-    @media screen and (max-width:$tablet) {
+    @media screen and (max-width:767px) {
         display:none;
         
     }
@@ -406,7 +416,7 @@ font-family: 'DM Sans', sans-serif;
 }
 
 .eco__discription {
-font-family: 'DM Sans', sans-serif;
+
 max-width: 116px;
 margin-bottom: 20px;    
 align-items: center;
@@ -426,16 +436,20 @@ align-items: center;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: var(--main-title-color);
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: var(--main-title-color);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,&:focus{
+        background-color:var(--second-button-color);
+    }
     @media screen and (min-width:$desktop) {
         width: 26px;
         height: 26px;
     }
-    svg{
-        fill: var(--second-title-color);
-    }
+}
+.eco__icon{
+    fill: var(--second-title-color) ;
 }
 .girl__bg{
     position: absolute;
