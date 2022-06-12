@@ -11,3 +11,14 @@
 }
 
 // @include font($mb, $fw, $fs, $lh, $ls, $tt, $ta, $col, $bcol);
+
+@mixin bg_x2 {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// @include bg_x2 { };

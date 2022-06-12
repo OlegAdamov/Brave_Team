@@ -1,4 +1,204 @@
-h1 {
-    color: red;
-    height: 50px;
+.about {
+    position: relative;
+
+    padding: 40px 0;
+
+    @media screen and (max-width: 767px) {
+        background-image: url('../images/320px/made-bg-left.png'),
+            url('../images/320px/made-bg-right.png');
+        // background-size: 100px, cover;
+        background-position: 0 65%, 100% 70%;
+        // background-position: left 0 top 65%, right 0 top 70%;
+        background-repeat: no-repeat;
+
+        @include bg_x2 {
+            background-image: url('../images/320px/made-bg-left@2x.png'),
+                url('../images/320px/made-bg-right@2x.png');
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 20px 0 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 60px 0 40px;
+
+        background-image: url('../images/1280px/made-bg-left.png'),
+            url('../images/1280px/made-bg-right.png');
+        // background-size: 100px, cover;
+        background-position: 0 45%, 100% 60%;
+        // background-position: left 0 top 45%, right 0 top 60%;
+        background-repeat: no-repeat;
+
+        @include bg_x2 {
+            background-image: url('../images/1280px/made-bg-left@2x.png'),
+                url('../images/1280px/made-bg-right@2x.png');
+        }
+    }
+
+    background-color: #FFF5F6;
+}
+
+.container-about {
+   
+    @media screen and (min-width: $tablet) {
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 0 14px;
+    }
+}
+
+.about-title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section__pretitle {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 1.17;
+
+    color: var(--accent-color);
+}
+
+.section__title {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    color: var(--second-title-color);
+}
+
+.section__title--about {
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+       margin-bottom: 60px;
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cow {
+    
+    flex-grow: 1;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $mobile) {
+        max-width: 440px;                
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: 336px;
+        margin-bottom: 0;
+        margin-right: 32px;
+        
+    }
+    
+    @media screen and (min-width: $desktop) {
+        max-width: 501px;
+        margin-right: 139px;
+    }
+}
+
+.about__text-wrapper {
+    @media screen and (min-width: $tablet) {
+        width: 334px;
+       
+
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 463px;
+        
+    }
+   
+}
+
+.about__text {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    
+}
+
+.about__text--main {
+    
+
+    font-size: 16px;
+    line-height: 1.76;
+
+    color: #000000;
+}
+
+.about__text--description {
+    margin-top: 20px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 32px;
+    }
+
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+
+    color: #907E82;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 22px;
+    border: none;
+    padding: 0 37px;
+    height: 44px;
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.about__btn {
+    margin-top: 20px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 40px;
+    }
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    
+
+    background-color: var(--btn-light);
+
+    color: var(--main-btn-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--second-button-color);
+    }
+
+   
+}
+
+.about__icon {
+    margin-left: 13px;
+    
 }
