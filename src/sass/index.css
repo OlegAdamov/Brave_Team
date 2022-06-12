@@ -149,62 +149,38 @@ h1 {
   }
 }
 
-.box-button__btn1,
-.box-button__btn2 {
+.background__btn {
   text-align: center;
-  border-radius: 22px;
-  list-style: none;
-  height: 44px;
-  width: 161.45px;
-  position: relative;
-  border: none;
-}
-
-.box-button__btn1 {
-  margin-bottom: 10px;
-  color: var(--main-title-color);
-  background-color: var(--footer-btn-color);
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
-  .box-button__btn1 {
-    margin-bottom: 0;
-    color: var(--main-title-color);
-    background-color: var(--footer-btn-color);
-    margin-right: 15px;
+  .background__btn {
+    margin-top: 0;
+    margin-left: 15px;
   }
 }
 
-.box-button__btn2 {
-  text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
-  transition: background-color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
-}
-.box-button__btn2:hover, .box-button__btn2:focus {
-  background-color: var(--second-button-color);
-}
-
-.box-button__btn1 .box-button__icon {
+.footer__btn .modal__icon-btn {
   margin-left: 8px;
   fill: var(--second-button-color);
 }
 @media screen and (min-width: 768px) {
-  .box-button__btn1 .box-button__icon {
+  .footer__btn .modal__icon-btn {
     margin-left: 13.17px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .box-button__btn1 .box-button__icon {
+  .footer__btn .modal__icon-btn {
     margin-left: 13.62px;
   }
 }
 
-.box-button__btn2 .box-button__icon {
+.background__btn .modal__icon-btn {
   margin-left: 13.17px;
   fill: var(--main-btn-color);
 }
 @media screen and (min-width: 1280px) {
-  .box-button__btn2 .box-button__icon {
+  .background__btn .modal__icon-btn {
     margin-left: 13.62px;
   }
 }
