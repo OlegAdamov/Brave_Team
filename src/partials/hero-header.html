@@ -1,0 +1,186 @@
+<header class="header">
+  <div class="container header__box">
+    <a href="./index.html" class="header__logo link"
+      ><img
+        src="./images/ice-cream-min.svg"
+        alt="логотип"
+        class="header__icon"
+      />
+      icecream</a
+    >
+    <nav class="header__navigation">
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a href="" class="navigation__link link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link link">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link link">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link link">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="btn-box">
+      <button
+        type="button"
+        class="open-menu js-open-menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <svg width="20" height="12">
+          <use href="./images/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__btn">Buy now</button>
+    </div>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="close-menu js-close-menu">
+        <svg width="14" height="14">
+          <use href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <button type="button" class="modal-btn">Buy now</button>
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contacts" class="mobile-menu__link link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <div class="background__hero">
+      <picture>
+        <source
+          srcset="
+            ./images/1280px/header-ice-cream-cone@2x.png 2x,
+            ./images/1280px/header-ice-cream-cone.png
+          "
+          media="(min-width:1280px)"
+        />
+
+        <source
+          srcset="
+            ./images/768px/header-ice-cream-cone@2x.png 2x,
+            ./images/768px/header-ice-cream-cone.png
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/320px/header-ice-cream-cone@2x.png 2x,
+            ./images/320px/header-ice-cream-cone.png
+          "
+          media="(max-width:768px)"
+        />
+        <img
+          src="./images/1280px/header-ice-cream-cone.png"
+          alt="мороженое
+"
+          class="background__images"
+        />
+      </picture>
+    </div>
+    <div class="hero__box">
+      <div>
+        <h1 class="hero__title">
+          ice cream <br />
+          made with <br />
+          <span>passion</span>
+        </h1>
+
+        <ul class="hero-btn__list list">
+          <li class="hero-btn__item">
+            <a href="" class="hero-btn__link link">Products</a>
+          </li>
+          <li class="hero-btn__item">
+            <a href="" class="hero-btn__link link">How it’s made?</a>
+          </li>
+        </ul>
+        <div class="eco">
+          <picture>
+            <source
+              srcset="
+                ./images/1280px/header-jug-of-milk@2x.png 2x,
+                ./images/1280px/header-jug-of-milk.png
+              "
+              media="(min-width:1280px)"
+            />
+
+            <source
+              srcset="
+                ./images/768px/header-jug-of-milk@2x.png 2x,
+                ./images/768px/header-jug-of-milk.png
+              "
+              media="(min-width:768px)"
+            />
+            <img
+              src="./images/1280px/header-jug-of-milk.png"
+              alt=" член команды"
+              class="eco__image"
+            />
+          </picture>
+          <div class="eco__box">
+            <p class="eco__discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <a href="" class="eco__link link"> </a>
+          </div>
+
+          <picture>
+            <source
+              srcset="
+                ./images/1280px/header-girl@2x.png 2x,
+                ./images/1280px/header-girl.png
+              "
+              media="(min-width:1280px)"
+            />
+
+            <source
+              srcset="
+                ./images/768px/header-girl@2x.png 2x,
+                ./images/768px/header-girl.png
+              "
+              media="(min-width:768px)"
+            />
+            <img
+              src="./images/1280px/header-girl.png"
+              alt="девушка с мороженым
+"
+              class="girl__bg"
+            />
+          </picture>
+        </div>
+      </div>
+      <ul class="hero__list list">
+        <li class="hero__item">
+          <p class="hero__discription"><span>16</span>cafes</p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__discription"><span>23</span>food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
