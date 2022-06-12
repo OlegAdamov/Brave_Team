@@ -25,7 +25,7 @@
 
 .box-button__btn1,
 .box-button__btn2 {
-  @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+  text-align: center;
   border-radius: 22px;
   list-style: none;
   height: 44px;
@@ -81,7 +81,7 @@
       null,
       null,
       null,
-      cnull,
+      null,
       null,
       var(--second-button-color)
     );
@@ -105,6 +105,23 @@
   fill: var(--main-btn-color);
   @media screen and (min-width: $desktop) {
     margin-left: 13.62px;
+  }
+}
+.text {
+  @media screen and (min-width: $tablet) {
+    margin-left: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 16px;
+  }
+}
+.footer-soc,
+.footer-contacs {
+  @media screen and (min-width: $tablet) {
+    margin-right: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 16px;
   }
 }
 .text {
@@ -199,7 +216,7 @@
   display: flex;
   list-style: none;
 }
-.fotter-soc__link {
+.footer-soc__link {
   width: 32px;
   height: 32px;
   background-color: #fea5bb;

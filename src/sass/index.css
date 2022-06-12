@@ -151,9 +151,6 @@ h1 {
 
 .box-button__btn1,
 .box-button__btn2 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
   text-align: center;
   border-radius: 22px;
   list-style: none;
@@ -184,7 +181,6 @@ h1 {
   transition: background-color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
 }
 .box-button__btn2:hover, .box-button__btn2:focus {
-  text-align: cnull;
   background-color: var(--second-button-color);
 }
 
@@ -210,6 +206,30 @@ h1 {
 @media screen and (min-width: 1280px) {
   .box-button__btn2 .box-button__icon {
     margin-left: 13.62px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    margin-left: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-soc,
+.footer-contacs {
+    margin-right: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-soc,
+.footer-contacs {
+    margin-right: 16px;
   }
 }
 
@@ -296,7 +316,7 @@ h1 {
   list-style: none;
 }
 
-.fotter-soc__link {
+.footer-soc__link {
   width: 32px;
   height: 32px;
   background-color: #fea5bb;
@@ -307,7 +327,7 @@ h1 {
   fill: var(--main-title-color);
   transition: background-color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
 }
-.fotter-soc__link:hover, .fotter-soc__link:focus {
+.footer-soc__link:hover, .footer-soc__link:focus {
   background-color: var(--second-title-color);
 }
 
