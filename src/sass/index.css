@@ -170,10 +170,10 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .box-button__btn1 {
+    margin-bottom: 0;
     color: var(--main-title-color);
     background-color: var(--footer-btn-color);
     margin-right: 15px;
-    margin-bottom: 0;
   }
 }
 
@@ -181,7 +181,7 @@ h1 {
   text-align: center;
   color: var(--main-btn-color);
   background-color: var(--main-title-color);
-  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), fill 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: background-color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
 }
 .box-button__btn2:hover, .box-button__btn2:focus {
   text-align: cnull;
@@ -189,11 +189,28 @@ h1 {
 }
 
 .box-button__btn1 .box-button__icon {
+  margin-left: 8px;
   fill: var(--second-button-color);
+}
+@media screen and (min-width: 768px) {
+  .box-button__btn1 .box-button__icon {
+    margin-left: 13.17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .box-button__btn1 .box-button__icon {
+    margin-left: 13.62px;
+  }
 }
 
 .box-button__btn2 .box-button__icon {
+  margin-left: 13.17px;
   fill: var(--main-btn-color);
+}
+@media screen and (min-width: 1280px) {
+  .box-button__btn2 .box-button__icon {
+    margin-left: 13.62px;
+  }
 }
 
 .text {
@@ -217,8 +234,8 @@ h1 {
 }
 
 .footer-text {
-  margin-bottom: 16px;
   list-style: none;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.17;
   color: var(--accent-color);
@@ -288,7 +305,7 @@ h1 {
   justify-content: center;
   align-items: center;
   fill: var(--main-title-color);
-  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), fill 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: background-color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
 }
 .fotter-soc__link:hover, .fotter-soc__link:focus {
   background-color: var(--second-title-color);
@@ -329,6 +346,7 @@ h1 {
   font-size: 12px;
   line-height: 1.86;
   color: #000000;
+  font-style: bold;
 }
 
 .footer-contacts__link {
@@ -337,6 +355,7 @@ h1 {
   font-size: 12px;
   line-height: 1.86;
   color: var(--main-btn-color);
+  font-style: bold;
 }
 
 .unicode {
@@ -352,6 +371,19 @@ h1 {
   justify-content: center;
   display: flex;
   padding-bottom: 20px;
+  font-style: bold;
+}
+@media screen and (min-width: 768px) {
+  .end {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .end {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .end::before {
@@ -362,4 +394,9 @@ h1 {
   width: 100%;
   margin: 0 1.5rem;
   transform: translateY(-1rem);
+}
+@media screen and (min-width: 768px) {
+  .end::before {
+    transform: translateY(-0.5rem);
+  }
 }/*# sourceMappingURL=index.css.map */

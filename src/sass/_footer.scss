@@ -3,7 +3,7 @@
 }
 .location-franshise {
   display: block;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
   }
@@ -15,10 +15,10 @@
 }
 .box-button {
   @include font(48px, null, null, null, null, null, null, null, null);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     @include font(40px, null, null, null, null, null, null, null, null);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     @include font(120px, null, null, null, null, null, null, null, null);
   }
 }
@@ -45,9 +45,9 @@
     var(--main-title-color),
     var(--footer-btn-color)
   );
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     @include font(
-      null,
+      0,
       null,
       null,
       null,
@@ -58,12 +58,7 @@
       var(--footer-btn-color)
     );
     margin-right: 15px;
-    margin-bottom: 0;
   }
-  //   width: 161.45px;
-  //   @include desktop {
-  //     width: 198px;
-  //   }
 }
 .box-button__btn2 {
   @include font(
@@ -91,47 +86,46 @@
       var(--second-button-color)
     );
   }
-  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
-    fill 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  //   width: 180px;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 .box-button__btn1 .box-button__icon {
-  // position: absolute;
-  // top: 17px;
-  // right: 19px;
-  // margin-left: 13.62px;
-  // border-bottom: 5px solid var(--accent-color);
+  margin-left: 8px;
   fill: var(--second-button-color);
+  @media screen and (min-width: $tablet) {
+    margin-left: 13.17px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 13.62px;
+  }
 }
 .box-button__btn2 .box-button__icon {
-  // position: absolute;
-  // top: 17px;
-  // right: 19px;
-  // margin-left: 13.62px;
-  // border-bottom: 5px solid var(--accent-color);
+  margin-left: 13.17px;
   fill: var(--main-btn-color);
+  @media screen and (min-width: $desktop) {
+    margin-left: 13.62px;
+  }
 }
 .text {
   margin-bottom: 40px;
   width: 234px;
   height: 134px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
     position: absolute;
     width: 340px;
     height: 179px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 474px;
     height: 116px;
   }
 }
 .footer-text {
-  margin-bottom: 16px;
   list-style: none;
-  // text-transform: uppercase;
   @include font(
-    null,
+    16px,
     null,
     18px,
     1.17,
@@ -142,10 +136,9 @@
     null
   );
   font-family: Titan One;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 12px;
+  @media screen and (min-width: $tablet) {
     @include font(
-      null,
+      12px,
       null,
       26px,
       1.15,
@@ -156,7 +149,7 @@
       null
     );
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 16px;
   }
 }
@@ -174,7 +167,7 @@
     null
   );
   font-family: Titan One;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     @include font(
       null,
       null,
@@ -194,10 +187,10 @@
   list-style: none;
   margin-bottom: 40px;
   justify-content: flex-end;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: relative;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 132px;
   }
 }
@@ -215,8 +208,9 @@
   justify-content: center;
   align-items: center;
   fill: var(--main-title-color);
-  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
-    fill 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 
   &:hover,
   &:focus {
@@ -233,10 +227,10 @@
   justify-content: end;
   display: flex;
   margin-bottom: 56px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 127px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 68px;
   }
 }
@@ -247,6 +241,7 @@
 .footer-contacs__text {
   display: inline-flex;
   @include font(null, 700, 12px, 1.86, null, null, null, #000000, null);
+  font-style: bold;
 }
 .footer-contacts__link {
   text-decoration: none;
@@ -261,6 +256,7 @@
     var(--main-btn-color),
     null
   );
+  font-style: bold;
 }
 .unicode {
   margin-right: 4px;
@@ -270,6 +266,15 @@
   justify-content: center;
   display: flex;
   padding-bottom: 20px;
+  font-style: bold;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 8px;
+  }
+  @media screen and (max-width: ($tablet - 1)) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .end::before {
   position: absolute;
@@ -279,4 +284,7 @@
   width: 100%;
   margin: 0 1.5rem;
   transform: translateY(-1rem);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-0.5rem);
+  }
 }
