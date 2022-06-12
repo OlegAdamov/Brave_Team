@@ -1,0 +1,128 @@
+.bgr {
+    background-color:var(--modal-color);
+}
+/////////////////// header-hero-btn///////////////////
+.modal__btn{
+    color:var(--main-btn-color);
+    background-color: var(--main-title-color);
+    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+
+    border-radius: 22px;
+    border: none;
+
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover,
+    :focus {
+    background-color:var(--second-button-color);
+    }
+    transition-duration: 300ms;
+}
+.modal__icon-btn {
+    margin-left: 15px;
+}
+
+.product__btn {
+    color: var(--main-title-color);
+    background-color: var(--main-btn-color);
+    @include font(null, 400, 16px, 1.31, null, null, center, null, null);
+    
+    border-radius: 22px;
+    border: none;
+    
+    padding: 15px 40px;
+    
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    color:var(--main-btn-color) ;
+    }
+    transition-duration: 300ms;
+}
+
+.made__btn {
+    color:var(--main-btn-color);
+    background-color: var(--main-title-color);
+    @include font(null, 400, 16px, 1.31, null, null, center, null, null);
+
+    border-radius: 22px;
+    border: none;
+
+    padding: 15px 40px;
+    
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    }   
+    transition-duration: 300ms;
+}
+// ///////////////Header-hero-products-button////////////////
+.hero-href {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    fill:var(--main-btn-color);
+    align-items: center;
+    
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    }
+    transition-duration: 300ms;
+}
+
+
+//////////////////////how it’s made-button////////////
+.read-more__btn {
+    color: var(--main-btn-color);
+    background-color: var(--main-title-color);
+    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+
+    border-radius: 22px;
+    border: none;
+
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    :focus {
+        background-color: var(--second-button-color);
+    }
+    transition-duration: 300ms;
+}
+
+///////////////////footer-button//////////
+.footer__btn {
+    color:var(--main-title-color) ;
+    background-color:var(--main-btn-color);
+    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    
+    border-radius: 22px;
+    border: none;
+    
+    padding: 15px 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    color: var(--main-btn-color);
+    }
+    
+    transition-duration: 300ms;
+}
+
+.background__btn {
+background-color:var(--main-title-color);
+color: var(--main-btn-color);
+}
