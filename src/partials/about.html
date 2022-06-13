@@ -6,23 +6,18 @@
         </div>
 
         <div class="about__content">
-            <picture class="cow">
-                <!-- <source srcset="src/images/1280px/made-cow.webp 1x, src/images/1280px/made-cow@2x.webp 2x" media="(min-width:1280px)"
-                type="image/webp"> -->
+            <picture class="cow">                
                 <source srcset="./images/1280px/made-cow.png 1x, ./images/1280px/made-cow@2x.png 2x"
-                    media="(min-width:1280px)" type="image/png">
-                <!-- <source srcset="./src/images/768px/made-cow.webp 1x, ./src/images/768px/made-cow@2x.webp 2x" media="(min-width:480px)"
-                type="image/webp"> -->
+                    media="(min-width:1280px)" type="image/png">                
                 <source srcset="./images/768px/made-cow.png 1x, ./images/768px/made-cow@2x.png 2x"
-                    media="(min-width:480px)" type="image/png">
-                <!-- <source srcset="./src/images/320px/made-cow.webp 1x, ./src/images/320px/made-cow@2x.webp 2x" media="(max-width:479px)"
-                type="image/webp"> -->
+                    media="(min-width:480px)" type="image/png">                
                 <source srcset="./images/320px/made-cow.png 1x, ./images/320px/made-cow@2x.png 2x"
                     media="(max-width:479px)" type="image/png">
                 <img src="./images/320px/made-cow.png" alt="fresh milk and cow">
             </picture>
-
+            
             <div class="about__text-wrapper">
+                <input type="checkbox" class="read-more-checker" id="read-more-checker" />
                 <p class="about__text about__text--main">
                     Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
                     egestas eros.
@@ -37,17 +32,24 @@
                 <p class="about__text about__text--description">
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
-
-                <button type="button" class="btn about__btn">
-                    Read more
+                <p class="about__text about__text--description more">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+                    imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt.
+                </p>
+                <p class="about__text about__text--description more">
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                               
+                <label for="read-more-checker" class="btn about__btn read-more-btn">
                     <svg class="about__icon" width="6" height="10">
                         <use href="./images/sprite.svg#icon-arrow-red"></use>
                     </svg>
-                </button>                
+                </label>
+                
             </div>
         </div>
 
     </div>
-
-
 </section>
