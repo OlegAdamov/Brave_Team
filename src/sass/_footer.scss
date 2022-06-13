@@ -1,88 +1,249 @@
 .footer {
-  padding-top: 32px;
-  // background-color: var(--accent-color);
-  @include font(
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    var(--accent-color)
-  );
-  //   background-color: #ffa5ba;
+  @include font(null, null, null, null, null, null, null, null, #fff5f6);
+}
+.location-franshise {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .location-franshise__item {
   list-style: none;
   justify-content: center;
   display: flex;
 }
-.btn1,
-.btn2 {
-  @include font(null, 700, 16px, 1.31, null, null, center, null, null);
-  border-radius: 22px;
+.box-button {
+  @include font(48px, null, null, null, null, null, null, null, null);
+  @media screen and (min-width: $tablet) {
+    @include font(40px, null, null, null, null, null, null, null, null);
+  }
+  @media screen and (min-width: $desktop) {
+    @include font(120px, null, null, null, null, null, null, null, null);
+  }
+}
+
+.background__btn {
+  text-align: center;
+  margin-top: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+}
+.footer__btn .modal__icon-btn {
+  margin-left: 8px;
+  fill: var(--second-button-color);
+  @media screen and (min-width: $tablet) {
+    margin-left: 13.17px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 13.62px;
+  }
+}
+.background__btn .modal__icon-btn {
+  margin-left: 13.17px;
+  fill: var(--main-btn-color);
+  @media screen and (min-width: $desktop) {
+    margin-left: 13.62px;
+  }
+}
+.text {
+  @media screen and (min-width: $tablet) {
+    margin-left: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 16px;
+  }
+}
+.footer-soc,
+.footer-contacs {
+  @media screen and (min-width: $tablet) {
+    margin-right: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 16px;
+  }
+}
+.text {
+  margin-bottom: 40px;
+  width: 234px;
+  height: 134px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    position: absolute;
+    width: 340px;
+    height: 179px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 474px;
+    height: 116px;
+  }
+}
+.footer-text {
   list-style: none;
-  align-items: Center;
-  border-color: inherit;
-  height: 44px;
-  width: 161.45px;
-}
-.btn1 {
   @include font(
-    10px,
+    16px,
+    null,
+    18px,
+    1.17,
     null,
     null,
     null,
-    null,
-    null,
-    null,
-    var(--main-title-color),
-    #d41342
+    var(--accent-color),
+    null
   );
-  //   width: 161.45px;
-  //   @include desktop {
-  //     width: 198px;
-  //   }
+  font-family: Titan One;
+  @media screen and (min-width: $tablet) {
+    @include font(
+      12px,
+      null,
+      26px,
+      1.15,
+      0.04em,
+      null,
+      null,
+      var(--accent-color),
+      null
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
 }
-.btn2 {
+.text-2 {
+  list-style: none;
   @include font(
     null,
     null,
+    34px,
+    1.147,
     null,
     null,
     null,
-    null,
-    center,
     var(--main-btn-color),
-    var(--main-title-color)
+    null
   );
-  //   width: 180px;
+  font-family: Titan One;
+  @media screen and (min-width: $tablet) {
+    @include font(
+      null,
+      null,
+      48px,
+      1.146,
+      0.06em,
+      null,
+      null,
+      var(--main-btn-color),
+      null
+    );
+  }
 }
-.arrow {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.footer-soc {
   cursor: pointer;
-  margin-left: 13.62px;
-  border-bottom: 1px solid var(--accent-color);
+  display: flex;
+  list-style: none;
+  margin-bottom: 40px;
+  justify-content: flex-end;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 132px;
+  }
 }
-.line {
-  border: none;
-  background-color: red;
-  color: red;
-  height: 2px;
+.footer-soc__list {
+  max-width: 100%;
+  display: flex;
+  list-style: none;
+}
+.footer-soc__link {
+  width: 32px;
+  height: 32px;
+  background-color: #fea5bb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-title-color);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-title-color);
+  }
+}
+.footer-soc__item + .footer-soc__item {
+  margin-left: 28.24px;
+}
+.footer-soc__icon {
+  fill: var(--main-title-color);
+}
+.footer-contacs {
+  justify-content: end;
+  display: flex;
+  margin-bottom: 56px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 127px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 68px;
+  }
+}
+.footer-contacs__list {
+  text-decoration: none;
+  list-style: none;
+}
+.footer-contacs__text {
+  display: inline-flex;
+  @include font(null, 700, 12px, 1.86, null, null, null, #000000, null);
+  font-style: bold;
+}
+.footer-contacts__link {
+  text-decoration: none;
+  @include font(
+    null,
+    700,
+    12px,
+    1.86,
+    null,
+    null,
+    null,
+    var(--main-btn-color),
+    null
+  );
+  font-style: bold;
 }
 .unicode {
   margin-right: 4px;
 }
 .end {
-  color: #907e82;
-  font-weight: 700;
-  font-size: 14px;
+  @include font(null, 700, 14px, 1.86, 0.02em, null, null, #907e82, null);
   justify-content: center;
   display: flex;
-  margin-top: 16px;
   padding-bottom: 20px;
+  font-style: bold;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 8px;
+  }
+  @media screen and (max-width: ($tablet - 1)) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.end::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+  margin: 0 1.5rem;
+  transform: translateY(-1rem);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-0.5rem);
+  }
 }
