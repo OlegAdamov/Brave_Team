@@ -1,0 +1,464 @@
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-top: 8px ;
+    background-color: transparent;
+    @media screen and (min-width:$tablet) {
+        padding-top: 32px ;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 40px ;
+    }
+
+     
+}
+
+
+.header__box {
+    display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Titan One', cursive;
+    @include font(null, 400, 26px, 1.46, 0.04em, uppercase, null, var(--second-title-color), null);
+    @media screen and (min-width:$mobile) {
+        font-size: 36px;
+    }
+}
+
+.header__icon {
+    
+    height: 50px;
+    @media screen and (min-width:320px) {
+    margin-right: 18px;
+    }
+}
+
+.header__navigation {
+    display: flex;
+
+    @media screen and (max-width:$desktop) {
+        display: none;
+
+    }
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__item {
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+}
+
+.navigation__link {
+    display: flex;
+    align-items: center;
+   
+   
+
+    
+    @include font(null, 700, 16px, 1.31, null, null, null, var(--main-title-color), null);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--second-title-color);
+    }
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+}
+
+.open-menu {
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width:$tablet) {
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        display: none;
+    }
+}
+
+.header__btn {
+    color: var(--main-btn-color);
+        background-color: var(--main-title-color);
+        @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    
+        border-radius: 22px;
+        border: none;
+    
+        padding: 15px 40px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &:hover,
+        :focus {
+            background-color: var(--second-button-color);
+        }
+    
+        transition-duration: 300ms;
+    @media screen and (max-width:$tablet) {
+        display: none;
+    }
+}
+
+
+.mobile-menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    padding: 60px 20px 20px 20px;
+    transform: translateX(100%);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+    overflow-x: scroll;
+
+    background-color: #E17992;
+
+    @media screen and (min-width:$mobile) {
+        width: 40%;
+    }
+
+    @media screen and (min-width:$desktop) {
+        display: none;
+    }
+
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+     background-color: transparent;
+}
+
+.modal-btn {
+    
+display: inline-block;
+    margin-bottom: 19px;
+}
+
+.mobile-menu__list {
+
+    
+}
+
+.mobile-menu__item {
+    &:nth-child(1) {
+        border-top: 1px solid #E18298;
+        }
+    border-bottom: 1px solid #E18298;
+
+
+}
+
+.mobile-menu__link {
+    
+    font-style: normal;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+   
+    
+@include font(null, 700, 14px, 1.28, null, null, null, var(--main-title-color),null );
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--second-title-color);
+    }
+}
+
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--header-color);
+    padding-top:200px ;
+    padding-bottom:152px ;
+    @media screen and (min-width:$tablet) {
+    padding-top:102px ;
+    padding-bottom: 16px;
+    }
+    @media screen and (min-width:$desktop) {
+    padding-top: 147px;
+    padding-bottom:60px ;
+    }
+              
+}
+.background__hero {
+    position: absolute;
+    top: 89px;
+    right: -60px;
+    width:346px ;
+    height:344px ;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    @media screen and (min-width:$tablet) {
+        top: 43px;
+            right: 185px;
+            width: 335px;
+            height: 333px;
+        
+    }
+        @media screen and (min-width:$desktop) {
+            top: 54px;
+            right: 26%;
+            width: 534px;
+            height: 534px;
+    
+        }
+        @media screen and (min-width:2050px) {
+            right: 35%;
+        }
+}
+
+.background__images {
+    
+    position: absolute;
+    width: 171px;
+    right: 10px;
+    top: 30px;
+    @media screen and (min-width:320px) {
+        right: 94px;
+    }
+        @media screen and (min-width:$tablet) {
+        width: 143px;
+            right: 118px;
+            top: 76px;
+           
+    
+        }
+                @media screen and (min-width:$desktop) {
+                    width: 236px;
+                    
+                    right: 179px;
+                  top: 168px;
+        
+                }
+}
+
+
+
+
+.hero__box { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+      
+}
+
+.hero__title { 
+    display: inline-block;
+        font-family: 'Titan One', cursive;
+        
+
+    @include font(null, 400, 26px, 1.15, 0.04em, uppercase, null, var(--main-title-color), null);
+
+        
+    @media screen and (min-width:$tablet) {
+        font-size: 22px;
+            line-height: 1.13;
+        }
+    
+        @media screen and (min-width:$desktop) {
+        font-size: 38px;
+            line-height: 1.15;
+            
+}
+span{
+    font-size: 48px;
+        line-height: 0.95;
+        color: var(--second-title-color);
+        @media screen and (min-width:$tablet) {
+                font-size: 34px;
+                    line-height: 0.91;
+            }
+        
+            @media screen and (min-width:$desktop) {
+                font-size: 58px;
+                    line-height: 0.91;
+                    
+            }
+}
+}
+
+.hero-btn__list {
+    display: flex;
+    margin-top: 20px;
+    @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width:$desktop) {
+       margin-top: 24px; 
+       margin-bottom: 40px;
+    }
+       }
+
+
+
+.hero-btn__item {
+   
+    &:not(:last-child){margin-right: 8px;}
+         @media screen and  (min-width:$desktop){
+            &:not(:last-child){
+                margin-right: 12px;
+            }
+         }
+}
+
+.hero-btn__link {
+  display: inline-block;
+    @include font(null, 400, 8px, 1.25, null, null, center, var(--main-title-color), null);
+        
+}
+
+
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:$tablet) {
+        display: none;
+    }
+}
+
+.hero__item {
+    
+    position: relative;
+    &:not(:last-child){margin-bottom: 16px;}
+}
+.hero__item::before{
+    position: absolute;
+        top: -5px;
+        right: -5px;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: var(--main-title-color);
+        border-radius: 50%;
+    
+        @media screen and(min-width:$desktop) {
+            width: 30px;
+            height: 30px;
+        }
+}
+
+.hero__discription {
+    
+
+ 
+    @include font(null, 400, 8px, 1.25, null, null, right, var(--main-title-color), null);
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        
+            
+    }
+        span{
+         position: sticky;
+         
+         
+        display: block;
+        font-family: 'Titan One', cursive;         
+        @include font(null, 400, 28px, 1.14, 0.04em, uppercase, right, var(--second-title-color), null);
+        @media screen and (min-width:$desktop) {
+            font-size: 46px;
+                
+        }             
+}
+}
+
+.eco {
+    display: flex;
+    @media screen and (max-width:767px) {
+        display:none;
+        
+    }
+}
+.eco__box{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.eco__image {
+    
+    width: 152px;
+    @media screen and (min-width:$desktop) {
+        width: 312px;
+        
+    }
+    
+}
+
+.eco__discription {
+
+max-width: 116px;
+margin-bottom: 20px;    
+align-items: center;
+
+ @include font(null, 400, 8px, 1.5, null, null, null, var(--main-title-color), null);
+@media screen and (min-width: $desktop) {
+ font-size: 14px;
+ line-height: 1.42;
+ max-width: 200px;
+                
+            }
+        
+}
+
+.eco__link {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-title-color);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    &:hover,&:focus{
+        background-color:var(--second-button-color);
+    }
+    @media screen and (min-width:$desktop) {
+        width: 26px;
+        height: 26px;
+    }
+}
+.eco__icon{
+    fill: var(--second-title-color) ;
+}
+.girl__bg{
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    width: 190px;
+    @media screen and (min-width:$desktop) {
+        width: 304px;
+        bottom: -60px;
+    }
+}
+
