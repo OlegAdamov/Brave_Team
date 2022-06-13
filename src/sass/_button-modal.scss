@@ -16,7 +16,7 @@
     
     &:hover,
     :focus {
-    background-color:var(--second-button-color);
+    background-color:var(--second-btn-color);
     }
     transition-duration:var(--transition-duration);
     
@@ -35,8 +35,8 @@
     
     &:hover,
     :focus {
-    background-color: var(--second-button-color);
-    color:var(--main-btn-color) ;
+    background-color: var(--second-btn-color);
+    color:var(--main-title-color) ;
     }
     transition-duration:var(--transition-duration);
     @media screen and (max-width: 1199px) {
@@ -118,12 +118,21 @@
     
     &:hover,
     :focus {
-    background-color: var(--second-button-color);
-    color: var(--main-btn-color);
+    background-color: var(--second-btn-color);
+    color: var(--main-title-color);
     }
     
     transition-duration:var(--transition-duration);
 }
+// //////////////////////////////Hover-footer-btn/////////////////
+.footer__btn-franchise {
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    color: var(--main-btn-color);
+    }
+}
+
 
 .background__btn {
 background-color:var(--main-title-color);
