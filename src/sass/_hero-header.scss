@@ -30,6 +30,53 @@
         font-size: 36px;
     }
 }
+.bounce-in-top {
+    animation: bounce-in-top 1.1s both;
+}
+
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
 
 .header__icon {
     
@@ -117,10 +164,9 @@
     }
 }
 
-
 .mobile-menu {
-    z-index: 2;
     position: fixed;
+    z-index: 2;
     top: 0;
     right: 0;
     height: 100vh;
@@ -160,10 +206,7 @@ display: inline-block;
     margin-bottom: 19px;
 }
 
-.mobile-menu__list {
 
-    
-}
 
 .mobile-menu__item {
     &:nth-child(1) {
@@ -258,6 +301,38 @@ display: inline-block;
                   top: 168px;
         
                 }
+}
+.wobble-hor-bottom {
+    animation: wobble-hor-bottom 1s both;
+}
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
 }
 
 
@@ -460,5 +535,26 @@ align-items: center;
         width: 304px;
         bottom: -60px;
     }
+}.top__link {
+    position: fixed;
+    z-index: 2;
+    right: 10%;
+    bottom: 10%;
+    &:hover,&:focus{
+            animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @keyframes rotate-in-center {
+                    0% {
+                        transform: rotate(-360deg);
+                        opacity: 0;
+                    }
+            
+                    100% {
+                        transform: rotate(0);
+                        opacity: 1;
+                    }
+                }
+    }
 }
-
+.top-link__icon{
+    fill: var(--main-btn-color);
+}
