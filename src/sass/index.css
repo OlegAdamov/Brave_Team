@@ -2004,8 +2004,8 @@ body {
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
   border-radius: 22px;
   border: none;
   padding: 15px 40px;
@@ -2087,8 +2087,8 @@ body {
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
   border-radius: 22px;
   border: none;
   padding: 15px 40px;
