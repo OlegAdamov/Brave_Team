@@ -3,9 +3,7 @@
 }
 /////////////////// header-hero-btn///////////////////
 .modal__btn{
-    color:var(--main-btn-color);
-    background-color: var(--main-title-color);
-    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
 
     border-radius: 22px;
     border: none;
@@ -20,16 +18,15 @@
     :focus {
     background-color:var(--second-button-color);
     }
-    transition-duration: 300ms;
+    transition-duration:var(--transition-duration);
+    
 }
 .modal__icon-btn {
     margin-left: 15px;
 }
 
 .product__btn {
-    color: var(--main-title-color);
-    background-color: var(--main-btn-color);
-    @include font(null, 400, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
     
     border-radius: 22px;
     border: none;
@@ -41,13 +38,17 @@
     background-color: var(--second-button-color);
     color:var(--main-btn-color) ;
     }
-    transition-duration: 300ms;
+    transition-duration:var(--transition-duration);
+    @media screen and (max-width: 1199px) {
+        font-size: 8px;
+        line-height:0.8;
+        padding: 9px 14px;
+    }
+
 }
 
 .made__btn {
-    color:var(--main-btn-color);
-    background-color: var(--main-title-color);
-    @include font(null, 400, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
 
     border-radius: 22px;
     border: none;
@@ -57,8 +58,14 @@
     &:hover,
     :focus {
     background-color: var(--second-button-color);
-    }   
-    transition-duration: 300ms;
+    }
+    @media screen and (max-width: 1199px) {
+        font-size: 8px;
+        line-height: 0.8;
+        line-height: 0.8;
+        padding: 9px 14px;
+    }
+    transition-duration:var(--transition-duration);
 }
 // ///////////////Header-hero-products-button////////////////
 .hero-href {
@@ -72,15 +79,13 @@
     :focus {
     background-color: var(--second-button-color);
     }
-    transition-duration: 300ms;
+    transition-duration:var(--transition-duration);
 }
 
 
 //////////////////////how it’s made-button////////////
 .read-more__btn {
-    color: var(--main-btn-color);
-    background-color: var(--main-title-color);
-    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
 
     border-radius: 22px;
     border: none;
@@ -95,14 +100,12 @@
     :focus {
         background-color: var(--second-button-color);
     }
-    transition-duration: 300ms;
+    transition-duration:var(--transition-duration);
 }
 
 ///////////////////footer-button//////////
 .footer__btn {
-    color:var(--main-title-color) ;
-    background-color:var(--main-btn-color);
-    @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
     
     border-radius: 22px;
     border: none;
@@ -119,7 +122,7 @@
     color: var(--main-btn-color);
     }
     
-    transition-duration: 300ms;
+    transition-duration:var(--transition-duration);
 }
 
 .background__btn {
