@@ -1,0 +1,29 @@
+<section class="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <picture>
+      <source
+        srcset="
+          /src/images/1280px/gallery-1280.png 1x,
+          /src/images/1280px/gallery-2560.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          /src/images/768px/gallery-768.png  1x,
+          /src/images/768px/gallery-1536.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          /src/images/320px/gallery-480.png 1x,
+          /src/images/320px/gallery-960.png 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img src="/src/images/1280px/gallery-1280.png" alt="Gallery" />
+    </picture>
+  </div>
+</section>
