@@ -398,4 +398,127 @@ h1 {
   .end::before {
     transform: translateY(-0.5rem);
   }
-} /*# sourceMappingURL=index.css.map */
+}
+
+.bgr {
+  background-color: var(--modal-color);
+}
+
+.modal__btn {
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 300ms;
+}
+.modal__btn:hover,
+.modal__btn :focus {
+  background-color: var(--second-button-color);
+}
+
+.modal__icon-btn {
+  margin-left: 15px;
+}
+
+.product__btn {
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  padding: 15px 40px;
+  transition-duration: 300ms;
+}
+.product__btn:hover,
+.product__btn :focus {
+  background-color: var(--second-button-color);
+  color: var(--main-btn-color);
+}
+
+.made__btn {
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  padding: 15px 40px;
+  transition-duration: 300ms;
+}
+.made__btn:hover,
+.made__btn :focus {
+  background-color: var(--second-button-color);
+}
+
+.hero-href {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  fill: var(--main-btn-color);
+  align-items: center;
+  transition-duration: 300ms;
+}
+.hero-href:hover,
+.hero-href :focus {
+  background-color: var(--second-button-color);
+}
+
+.read-more__btn {
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 300ms;
+}
+.read-more__btn:hover,
+.read-more__btn :focus {
+  background-color: var(--second-button-color);
+}
+
+.footer__btn {
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 300ms;
+}
+.footer__btn:hover,
+.footer__btn :focus {
+  background-color: var(--second-button-color);
+  color: var(--main-btn-color);
+}
+
+.background__btn {
+  background-color: var(--main-title-color);
+  color: var(--main-btn-color);
+}
+/*# sourceMappingURL=index.css.map */
