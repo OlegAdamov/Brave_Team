@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --header-color: #ffb8ca;
@@ -292,25 +293,25 @@ body {
 }
 
 .header__btn {
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
+  color: var(--main-btn-color);
+  background-color: var(--main-title-color);
   border-radius: 22px;
   border: none;
-  padding: 15px 40px;
+  padding: 11px 37px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 300ms;
+  transition-duration: var(--transition-duration);
 }
 .header__btn:hover,
 .header__btn :focus {
   background-color: var(--second-button-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__btn {
     display: none;
   }
@@ -676,7 +677,7 @@ body {
 }
 
 .eco__discription {
-  max-width: 116px;
+  max-width: 124px;
   margin-bottom: 20px;
   align-items: center;
   font-weight: 400;
@@ -1528,6 +1529,272 @@ body {
   background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
 
+@media screen and (max-width: 767px) {
+  .customer {
+    margin-top: 80px;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+
+.customer__pict,
+.customer__pict > source,
+.customer__pict > img {
+  max-width: 84px;
+  max-height: 84px;
+  margin: 0 auto 32px auto;
+}
+
+.customer__bg {
+  background-color: #fafafa;
+  padding: auto;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 767px) {
+  .customer__bg {
+    padding: 30px 50px 17px 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__bg {
+    padding: 20px 6px 36px 6px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__bg {
+    padding: 32px 107px 31px 105px;
+  }
+}
+
+.customer__box {
+  position: relative;
+  background-image: repeating-linear-gradient(to top, #e1e1e1, #e1e1e1 1px, transparent 1px, transparent 31px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .customer__box {
+    max-width: 180px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__box {
+    width: 608px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__box {
+    width: 822px;
+    height: auto;
+  }
+}
+
+/* зворотній апостроф */
+.customer__box::before {
+  position: absolute;
+  content: "";
+  background: url("../images/apostrophe.png") no-repeat;
+  top: -15px;
+  left: 0;
+  display: block;
+  height: 40px;
+  width: 54px;
+}
+
+.customer__text {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /* font-family: DM + Sans;
+  @include font(
+    null,
+    500,
+    12px,
+    2.55,
+    null,
+    null,
+    center,
+    var(--text-color-dark),
+    #fafafa
+  ); */
+}
+@media screen and (max-width: 767px) {
+  .customer__text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    letter-spacing: 0.04em;
+    max-width: 515px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    width: 515px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__text {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: center;
+    letter-spacing: 0.04em;
+    width: 750px;
+    height: auto;
+  }
+}
+
+.customer__name {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .customer__name {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__name {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__name {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+  }
+}
+
+/* крапочки */
+.customer__name::before {
+  position: absolute;
+  content: "";
+  background: url("../images/points.png") no-repeat;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 40px;
+  width: 32px;
+}
+
+.slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+  margin: 0 auto;
+}
+
+.slides article {
+  width: 20%;
+  float: left;
+}
+
+.slides .image {
+  width: 500%;
+  line-height: 0;
+}
+
+.overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+label,
+a {
+  cursor: pointer;
+}
+
+.all input {
+  display: none;
+}
+
+#switch1:checked ~ .slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ .slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .image {
+  margin-left: -200%;
+}
+
+.active label {
+  margin-top: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #d9d9d9;
+}
+
+.active label:nth-child(1) {
+  background: url("../images/hause.png") no-repeat;
+}
+
+.active label:hover:nth-child(1) {
+  background: url("../images/hause.png") no-repeat;
+}
+
+.active label:not(:last-child) {
+  margin-right: 18px;
+}
+
+.active label:hover {
+  background: #76c8ff;
+}
+
+#switch2:checked ~ .active label:nth-child(2),
+#switch3:checked ~ .active label:nth-child(3) {
+  background: #76c8ff;
+}
+
+.slides .image {
+  transition: all 800ms cubic-bezier(0.7, 0, 0.175, 1);
+}
+
 .contacts-section {
   padding-bottom: 32px;
   background-image: linear-gradient(to bottom, var(--main-title-color) 25%, #fff5f6 25%);
@@ -1790,6 +2057,12 @@ body {
   .footer__btn .modal__icon-btn {
     margin-left: 13.62px;
   }
+}
+
+.footer__btn-franchise:hover,
+.footer__btn-franchise :focus {
+  background-color: var(--second-button-color);
+  color: var(--main-btn-color);
 }
 
 .background__btn .modal__icon-btn {
@@ -2142,6 +2415,11 @@ body {
 @media screen and (min-width: 1199px) {
   .footer__btn {
     padding: 11px 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__btn {
+    width: 70%;
   }
 }
 .footer__btn:hover,
