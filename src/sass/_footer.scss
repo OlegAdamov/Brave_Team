@@ -42,6 +42,13 @@
     margin-left: 13.62px;
   }
 }
+.footer__btn-franchise {
+  &:hover,
+  :focus {
+    background-color: var(--second-button-color);
+    color: var(--main-btn-color);
+  }
+}
 .background__btn .modal__icon-btn {
   margin-left: 13.17px;
   fill: var(--main-btn-color);
