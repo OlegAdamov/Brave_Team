@@ -8,7 +8,7 @@
     border-radius: 22px;
     border: none;
 
-    padding: 15px 40px;
+    padding: 11px 37px;
 
     display: flex;
     align-items: center;
@@ -26,12 +26,12 @@
 }
 
 .product__btn {
-    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-title-color),var(--main-btn-color) );
+    @include font(null, 400, 8px ,0.8 , null, null, center, var(--main-title-color),var(--main-btn-color) );
     
     border-radius: 22px;
     border: none;
     
-    padding: 15px 40px;
+    padding: 7px 15px;
     
     &:hover,
     :focus {
@@ -39,31 +39,30 @@
     color:var(--main-title-color) ;
     }
     transition-duration:var(--transition-duration);
-    @media screen and (max-width: 1199px) {
-        font-size: 8px;
-        line-height:0.8;
-        padding: 9px 14px;
+    @media screen and (min-width: 1199px) {
+        font-size:16px ;
+        line-height:1.31;
+        padding: 11px 24px;
     }
 
 }
 
 .made__btn {
-    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
+    @include font(null, 400,8px , 0.8, null, null, center, var(--main-btn-color), var(--main-title-color));
 
     border-radius: 22px;
     border: none;
 
-    padding: 15px 40px;
+    padding: 7px 15px;
     
     &:hover,
     :focus {
     background-color: var(--second-button-color);
     }
-    @media screen and (max-width: 1199px) {
-        font-size: 8px;
-        line-height: 0.8;
-        line-height: 0.8;
-        padding: 9px 14px;
+    @media screen and (min-width: 1199px) {
+        font-size:16px ;
+        line-height:1.31 ;
+        padding: 11px 24px;
     }
     transition-duration:var(--transition-duration);
 }
@@ -90,7 +89,7 @@
     border-radius: 22px;
     border: none;
 
-    padding: 15px 40px;
+    padding: 11px 38px;
 
     display: flex;
     align-items: center;
@@ -110,7 +109,10 @@
     border-radius: 22px;
     border: none;
     
-    padding: 15px 40px;
+    padding: 11px 33px;
+    @media screen and (min-width: 1199px){
+        padding: 11px 36px;
+    }
     
     display: flex;
     align-items: center;
@@ -125,16 +127,14 @@
     transition-duration:var(--transition-duration);
 }
 // //////////////////////////////Hover-footer-btn/////////////////
-.footer__btn-franchise {
-    &:hover,
-    :focus {
-    background-color: var(--second-button-color);
-    color: var(--main-btn-color);
-    }
-}
 
 
 .background__btn {
 background-color:var(--main-title-color);
 color: var(--main-btn-color);
+&:hover,
+:focus {
+background-color: var(--second-button-color);
+color: var(--main-btn-color);
+}
 }
