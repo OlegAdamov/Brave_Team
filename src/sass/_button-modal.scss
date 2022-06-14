@@ -113,6 +113,9 @@
     @media screen and (min-width: 1199px){
         padding: 11px 36px;
     }
+    @media screen and (max-width: 767px){
+        width: 200px;
+    }
     
     display: flex;
     align-items: center;
