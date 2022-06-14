@@ -3,7 +3,7 @@
 }
 /////////////////// header-hero-btn///////////////////
 .modal__btn{
-    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color) , var(--main-title-color) );
 
     border-radius: 22px;
     border: none;
@@ -16,7 +16,7 @@
     
     &:hover,
     :focus {
-    background-color:var(--second-button-color);
+    background-color:var(--second-btn-color);
     }
     transition-duration:var(--transition-duration);
     
@@ -26,7 +26,7 @@
 }
 
 .product__btn {
-    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
+    @include font(null, 400, 16px, 1.31, null, null, center, var(--main-title-color),var(--main-btn-color) );
     
     border-radius: 22px;
     border: none;
@@ -35,8 +35,8 @@
     
     &:hover,
     :focus {
-    background-color: var(--second-button-color);
-    color:var(--main-btn-color) ;
+    background-color: var(--second-btn-color);
+    color:var(--main-title-color) ;
     }
     transition-duration:var(--transition-duration);
     @media screen and (max-width: 1199px) {
@@ -85,7 +85,7 @@
 
 //////////////////////how it’s made-button////////////
 .read-more__btn {
-    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color),var(--main-title-color) );
 
     border-radius: 22px;
     border: none;
@@ -105,7 +105,7 @@
 
 ///////////////////footer-button//////////
 .footer__btn {
-    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-title-color), var(--main-btn-color) );
     
     border-radius: 22px;
     border: none;
@@ -118,12 +118,21 @@
     
     &:hover,
     :focus {
-    background-color: var(--second-button-color);
-    color: var(--main-btn-color);
+    background-color: var(--second-btn-color);
+    color: var(--main-title-color);
     }
     
     transition-duration:var(--transition-duration);
 }
+// //////////////////////////////Hover-footer-btn/////////////////
+.footer__btn-franchise {
+    &:hover,
+    :focus {
+    background-color: var(--second-button-color);
+    color: var(--main-btn-color);
+    }
+}
+
 
 .background__btn {
 background-color:var(--main-title-color);

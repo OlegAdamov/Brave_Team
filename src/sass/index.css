@@ -1992,7 +1992,7 @@ body {
 }
 .modal__btn:hover,
 .modal__btn :focus {
-  background-color: var(--second-button-color);
+  background-color: var(--second-btn-color);
 }
 
 .modal__icon-btn {
@@ -2004,8 +2004,8 @@ body {
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
   border-radius: 22px;
   border: none;
   padding: 15px 40px;
@@ -2013,8 +2013,8 @@ body {
 }
 .product__btn:hover,
 .product__btn :focus {
-  background-color: var(--second-button-color);
-  color: var(--main-btn-color);
+  background-color: var(--second-btn-color);
+  color: var(--main-title-color);
 }
 @media screen and (max-width: 1199px) {
   .product__btn {
@@ -2087,8 +2087,8 @@ body {
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
-  color: var(--main-btn-color);
-  background-color: var(--main-title-color);
+  color: var(--main-title-color);
+  background-color: var(--main-btn-color);
   border-radius: 22px;
   border: none;
   padding: 15px 40px;
@@ -2099,6 +2099,12 @@ body {
 }
 .footer__btn:hover,
 .footer__btn :focus {
+  background-color: var(--second-btn-color);
+  color: var(--main-title-color);
+}
+
+.footer__btn-franchise:hover,
+.footer__btn-franchise :focus {
   background-color: var(--second-button-color);
   color: var(--main-btn-color);
 }
