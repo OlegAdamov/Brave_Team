@@ -140,14 +140,12 @@
 }
 
 .header__btn {
-    color: var(--main-btn-color);
-        background-color: var(--main-title-color);
-        @include font(null, 700, 16px, 1.31, null, null, center, null, null);
+    @include font(null, 700, 16px, 1.31, null, null, center, var(--main-btn-color), var(--main-title-color));
     
         border-radius: 22px;
         border: none;
     
-        padding: 15px 40px;
+        padding: 11px 37px;
     
         display: flex;
         align-items: center;
@@ -156,10 +154,11 @@
         &:hover,
         :focus {
             background-color: var(--second-button-color);
+            
         }
     
-        transition-duration: 300ms;
-    @media screen and (max-width:$tablet) {
+        transition-duration:var(--transition-duration);
+    @media screen and (max-width:767px) {
         display: none;
     }
 }
@@ -492,7 +491,7 @@ span{
 
 .eco__discription {
 
-max-width: 116px;
+max-width: 124px;
 margin-bottom: 20px;    
 align-items: center;
 
