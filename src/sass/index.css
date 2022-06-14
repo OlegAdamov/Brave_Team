@@ -2419,7 +2419,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer__btn {
-    width: 70%;
+    width: 200px;
   }
 }
 .footer__btn:hover,
