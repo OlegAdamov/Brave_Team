@@ -151,7 +151,7 @@
   cursor: pointer;
   display: flex;
   list-style: none;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   justify-content: flex-end;
   @media screen and (min-width: $tablet) {
     position: relative;
@@ -159,11 +159,7 @@
   @media screen and (min-width: $desktop) {
     margin-top: 132px;
   }
-}
-.footer-soc__list {
   max-width: 100%;
-  display: flex;
-  list-style: none;
 }
 .footer-soc__link {
   width: 32px;
@@ -199,8 +195,6 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 68px;
   }
-}
-.footer-contacs__list {
   text-decoration: none;
   list-style: none;
 }

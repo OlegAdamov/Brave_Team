@@ -327,7 +327,6 @@ body {
   padding: 60px 20px 20px 20px;
   transform: translateX(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
-  overflow-x: scroll;
   background-color: #E17992;
 }
 @media screen and (min-width: 480px) {
@@ -1405,12 +1404,12 @@ body {
 }
 
 .advantages {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background-color: #FFF5F6;
 }
 @media screen and (min-width: 768px) {
   .advantages {
-    padding-bottom: 80px;
+    padding-bottom: 84px;
     background-color: #FFF5F6;
   }
 }
@@ -1432,29 +1431,29 @@ body {
 @media screen and (min-width: 768px) {
   .advantages-list {
     flex-direction: row;
-    padding-right: 209px;
   }
 }
 @media screen and (min-width: 1280px) {
   .advantages-list {
-    padding-right: 124px;
     -moz-column-gap: 130px;
          column-gap: 130px;
   }
 }
 
 .advantages-item {
-  padding-right: 50px;
+  width: 230px;
 }
 @media screen and (min-width: 768px) {
   .advantages-item {
     padding: 0;
     flex-basis: calc(33.3333333333% - 20px);
+    max-width: 170px;
   }
 }
 @media screen and (min-width: 1280px) {
   .advantages-item {
     flex-basis: calc(33.3333333333% - 100px);
+    max-width: 288px;
   }
 }
 
@@ -1563,17 +1562,17 @@ body {
 }
 @media screen and (max-width: 767px) {
   .customer__bg {
-    padding: 30px 50px 17px 50px;
+    padding: 45px 50px 17px 50px;
   }
 }
 @media screen and (min-width: 768px) {
   .customer__bg {
-    padding: 20px 6px 36px 6px;
+    padding: 35px 6px 36px 6px;
   }
 }
 @media screen and (min-width: 1280px) {
   .customer__bg {
-    padding: 32px 107px 31px 105px;
+    padding: 47px 107px 31px 105px;
   }
 }
 
@@ -1723,6 +1722,7 @@ body {
   text-align: center;
   top: 10px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slides article {
@@ -2162,8 +2162,9 @@ a {
   cursor: pointer;
   display: flex;
   list-style: none;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   justify-content: flex-end;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-soc {
@@ -2174,12 +2175,6 @@ a {
   .footer-soc {
     margin-top: 132px;
   }
-}
-
-.footer-soc__list {
-  max-width: 100%;
-  display: flex;
-  list-style: none;
 }
 
 .footer-soc__link {
@@ -2209,6 +2204,8 @@ a {
   justify-content: end;
   display: flex;
   margin-bottom: 56px;
+  text-decoration: none;
+  list-style: none;
 }
 @media screen and (min-width: 768px) {
   .footer-contacs {
@@ -2219,11 +2216,6 @@ a {
   .footer-contacs {
     margin-bottom: 68px;
   }
-}
-
-.footer-contacs__list {
-  text-decoration: none;
-  list-style: none;
 }
 
 .footer-contacs__text {
@@ -2308,7 +2300,7 @@ a {
 }
 .modal__btn:hover,
 .modal__btn :focus {
-  background-color: var(--second-btn-color);
+  background-color: var(--second-button-color);
 }
 
 .modal__icon-btn {
