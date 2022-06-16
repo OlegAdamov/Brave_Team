@@ -77,6 +77,19 @@
         animation-timing-function: ease-out;
     }
 }
+.scale-up-center {
+    animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 .header__icon {
     
@@ -118,6 +131,7 @@
 
     &:hover,
     &:focus {
+        
         color: var(--second-title-color);
     }
 }
